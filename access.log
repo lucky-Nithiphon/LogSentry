@@ -2,3 +2,12 @@
 127.0.0.1 - - [30/Aug/2026:02:30:05 +0700] "GET /search.php?q=SELECT+*+FROM+users HTTP/1.1" 200 512
 192.168.1.50 - - [30/Aug/2026:02:30:10 +0700] "POST /login.php?user=<script>document.cookie</script> HTTP/1.1" 401 230
 10.0.0.99 - - [30/Aug/2026:02:30:15 +0700] "GET /admin/dashboard HTTP/1.1" 403 120
+127.0.0.1 - - [02/Sep/2026:02:00:00 +0700] "GET /index.php HTTP/1.1" 200 1480
+10.0.0.42 - - [02/Sep/2026:02:00:05 +0700] "GET /products.php?id=%27%20OR%201%3D1-- HTTP/1.1" 200 512
+192.168.1.50 - - [02/Sep/2026:02:00:10 +0700] "POST /comment?text=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E HTTP/1.1" 200 230
+10.0.0.99 - - [02/Sep/2026:02:00:15 +0700] "GET /view?file=%2E%2E%2F%2E%2E%2Fetc%2Fpasswd HTTP/1.1" 403 120
+172.16.0.5 - - [02/Sep/2026:02:00:20 +0700] "GET /ping?host=127.0.0.1%3B%20cat%20%2Fetc%2Fpasswd HTTP/1.1" 200 350
+127.0.0.1 - - [02/Sep/2026:02:15:00 +0700] "GET /index.php HTTP/1.1" 200 1480
+10.0.0.42 - - [02/Sep/2026:02:15:05 +0700] "GET /products.php?id=%25252527%25252520OR%252525201%2525253D1-- HTTP/1.1" 200 512
+192.168.1.50 - - [02/Sep/2026:02:15:10 +0700] "POST /comment?text=%25253Cscript%25253Ealert(1)%25253C%25252Fscript%25253E HTTP/1.1" 200 230
+10.0.0.99 - - [02/Sep/2026:02:15:15 +0700] "GET /view?file=%252525252E%252525252E%252525252Fetc%252525252Fpasswd HTTP/1.1" 403 120
